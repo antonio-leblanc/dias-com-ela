@@ -6,6 +6,7 @@ const diffTime = Math.abs(date2 - date1);
 const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 console.log(diffTime + " milliseconds");
 console.log(diffDays + " days");
+let nDays = diffDays + 1
 
 var nDaysSpan = document.getElementById("ndays");
-nDaysSpan.innerText = diffDays
+nDaysSpan.innerText = nDays
